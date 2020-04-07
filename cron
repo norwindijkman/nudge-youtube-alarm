@@ -1,0 +1,2 @@
+5-59/10 * * * * cd ~/work/cron/alarm/youtube-url-gen/ && sh ~/work/cron/alarm/youtube-url-gen/sync.sh
+* * * * * export DISPLAY=:1 && cd ~/work/cron/alarm/youtube-url-gen/ && sh ~/work/cron/alarm/youtube-url-gen/conditional-open-vid.sh
