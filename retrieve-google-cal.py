@@ -30,7 +30,8 @@ def parse_recurrences(recur_rule, start, exclusions):
 
 def parse_channel_id(description):
     try:
-        soup = BeautifulSoup(description, parser='html5lib')
+        soup = BeautifulSoup(description, 'html.parser')
+        print(soup)
         link = soup.find('a').attrs['href']
         channel_id = link.split( 'channel/' )[1].split( '/' )[0].split( '?' )[0]
     except:
